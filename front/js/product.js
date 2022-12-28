@@ -13,7 +13,7 @@ console.log(productId);
  */
 fetch("http://localhost:3000/api/products/" + productId)
   .then((response) => response.json())
-  .then((apiData) => getapiData(apiData)); 
+  .then((apiData) => htmlRendering(apiData)); 
 
 /**
  * Récupérer les clés du produit depuis l'Api et déclaration de la fonction principale
@@ -25,7 +25,7 @@ fetch("http://localhost:3000/api/products/" + productId)
  * @param {string} description of product
  * @param {array of string} colors of product
  */
-function getapiData(productInfos) {
+function htmlRendering(productInfos) {
   const { imageUrl, altTxt, name, price, description, colors } = productInfos; 
   getProductImage(imageUrl, altTxt);
   getProductTitle(name);
@@ -91,16 +91,16 @@ function getProductColors(colors) {
 }
 
 const addButton = document.querySelector("#addToCart");
-//Au clique du bouton "ajouter au panier" envoi des produits dans le localstorage
+ //Au clique du bouton "ajouter au panier" envoi des produits dans le localstorage
 addButton.addEventListener("click", () => {
-//La commande JSON Parse analyse (parse) le contenu d’une chaîne formatée en JSON et en extrait des valeurs que vous pouvez stocker dans un champ ou une variable 4D. Cette commande désérialise des données JSON (transforme du json en javascript compréhensible) ; elle effectue l’action inverse de la commande JSON Stringify.
-//Création du panier de produits puis récupère du JSON sous forme de javascript depuis le local storage
+ //La commande JSON Parse analyse (parse) le contenu d’une chaîne formatée en JSON et en extrait des valeurs que vous pouvez stocker dans un champ ou une variable 4D. Cette commande désérialise des données JSON (transforme du json en javascript compréhensible) ; elle effectue l’action inverse de la commande JSON Stringify.
+ //Création du panier de produits puis récupère du JSON sous forme de javascript depuis le local storage
   let ProductsCart = JSON.parse(localStorage.getItem("products")) || [];
-//Récupération des couleurs choisies
+ //Récupération des couleurs choisies
   let selectedColor = document.querySelector("#colors").value; 
  //Récupération de la quantité de produit défini par l'utilisateur
   let productQuantity = document.querySelector("#quantity").value;
-//Définition des conditions pour que le message d'alerte s'affiche
+ //Définition des conditions pour que le message d'alerte s'affiche
   if (
     productQuantity == undefined ||
     productQuantity == null ||
@@ -111,9 +111,7 @@ addButton.addEventListener("click", () => {
     selectedColor == undefined
   )
   {
-    alert(
-      "Veuillez sélectionner une couleur et une quantité (entre 1 et 100) du produit"
-    );
+    alert("Veuillez sélectionner une couleur et une quantité (entre 1 et 100) du produit");
   } else {
  
   //ajout du produit avec les 3 références de la documentation
@@ -132,11 +130,12 @@ addButton.addEventListener("click", () => {
   if (identicalProductSearch != undefined) {
     const totalQuantity = parseInt(identicalProductSearch.productQuantity) + parseInt(productQuantity);
     identicalProductSearch.productQuantity = totalQuantity;
-    //Sinon on enregistre les nouveaux produits dans le local storage
+  //Sinon on enregistre les nouveaux produits dans le local storage
   } else {
     ProductsCart.push(addedProduct);
   } 
   //La syntaxe localStorage.setItem() permet de stocker une donnée
   //JSON.stringify transforme du javascript en format JSON stockable dans le local storage ou dans un serveur 
   localStorage.setItem("products", JSON.stringify(ProductsCart)); 
+  alert ("Le produit a été ajouté au panier")
 }});
