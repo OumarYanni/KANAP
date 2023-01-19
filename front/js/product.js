@@ -117,7 +117,7 @@ addButton.addEventListener("click", () => {
   //ajout du produit avec les 3 références de la documentation
   const addedProduct = {
     id: productId,
-    productQuantity: productQuantity,
+    quantity: productQuantity,
     color: selectedColor
   };
   
