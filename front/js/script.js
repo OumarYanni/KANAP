@@ -10,15 +10,6 @@ fetch(urlApi)
     console.log(products);
     
     let HTML = document.getElementById("items")
-    
-    /*let myHTML = ""*/
-    // for (let index = 0; index < products.length; index++) {
-    //   const product = products[index];
-    //   // console.log(product.name)
-    // }
-    // for (const product of products) {
-    //   console.log(product.name)
-    // }
 
     products.forEach(product => {
       // console.log(product.imageUrl);
