@@ -136,9 +136,6 @@ function showProductCart(product) {
       quantityParagraph.closest("article").dataset.color;
     quantityUpdating(Event, quantityDataId, quantityDataColor);
   });
-
-  //Appel des fonctions
-  //   deleteProduct();
 }
 
 //
@@ -168,16 +165,6 @@ function deleteProduct(dataId, dataColor) {
   );
 
   saveCart(cart);
-
-  //Supprimer le HTML
-  //section.remove();
-  //section.innerHTML = "";
-  //   const deleteParagraph = document.getElementsByClassName("deleteItem");
-  //   deleteParagraph.addEventListener("click", function() {
-  //       //const article = document.getElementsByClassName("cart__item");
-  //       //const section = document.getElementById("cart__items");
-  //       section.removeChild(article);
-  //   });
 
   //Lancer la fonction calcule du prix
   totalQuantityAndPrice();
@@ -216,61 +203,6 @@ function totalQuantityAndPrice() {
   eltTotalQuantity.textContent = quantity;
 }
 
-// //
-// function totalQuantity() {
-//   let getTotalQuantity = document.getElementById("totalQuantity");
-//   let cart = JSON.parse(localStorage.getItem("products"));
-
-//   let totalQuantity = [];
-//   let quantity = 0;
-//   for (let article of cart) {
-//     //Pour transformer le contenu de "quantity" en nombre car il ne l'était pas
-//     article.quantity = Number(article.quantity);
-//     // Additionne la valeur de chaque "quantity" des articles
-//     quantity += article.quantity;
-//   }
-//   //Permet de vérifier si les valeurs de "quantity" sont de type "nombre"
-//   for (let article of cart) {
-//     if (typeof article.quantity === "number") {
-//       console.log("quantity is a number");
-//     } else {
-//       console.log("quantity is NOT a number");
-//     }
-//   }
-
-//   totalQuantity.push(quantity);
-//   console.log(quantity);
-
-//   getTotalQuantity.textContent = quantity;
-// }
-
-// //
-// function totalPrice() {
-//   const getTotalPrice = document.getElementById("totalPrice");
-//   const getQuantity = document.querySelectorAll(".itemQuantity");
-//   const getPrices = document.querySelectorAll(
-//     ".cart__item__content__description"
-//   );
-
-//   let productPrice = 0;
-//   for (let i = 0; i < getPrices.length; i++) {
-//     // Le dernier paragraphe contenant le prix des articles
-//     const lastParagraph = getPrices[i].lastElementChild;
-//     //La valeur du dernier paragraphe qui contient le prix des articles
-//     const lastParagraphValue = parseInt(lastParagraph.textContent);
-//     //Ici on vérifie que le contenu parser (lastParagraphValue et getQuantity[i].value) peut être transformé en nombre entier
-//     if (
-//       Number.isNaN(lastParagraphValue) ||
-//       Number.isNaN(getQuantity[i].value)
-//     ) {
-//       console.log("One or both values are not a number");
-//     } else {
-//       //Quand ce sont bien des nombres entiers ont passe à la multiplication pour obtenir le prix total
-//       productPrice += lastParagraphValue * parseInt(getQuantity[i].value);
-//     }
-//   }
-//   getTotalPrice.textContent = productPrice;
-// }
 
 const submitButton = document.getElementById("order");
 
