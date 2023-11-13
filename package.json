@@ -1,13 +1,13 @@
 {
   "name": "kanap-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "An e-commerce site specializing in sofa sales",
+  "main": "back/server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node back/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": " Oumar Yanni",
+  "author": "Oumar Yanni",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
