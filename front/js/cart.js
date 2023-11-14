@@ -19,7 +19,7 @@ let cart = getCart();
 
 function cartProductsInfos() {
   for (const product of cart) {
-    fetch("http://localhost:3000/api/products/" + product.id)
+    fetch("/api/products/" + product.id)
       .then((Response) => Response.json())
       .then((productApi) => {
         product.price = productApi.price;
@@ -323,7 +323,7 @@ function send() {
     
       let data = { contact, products }
   
-      fetch("http://localhost:3000/api/products/order", {
+      fetch("/api/products/order", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {

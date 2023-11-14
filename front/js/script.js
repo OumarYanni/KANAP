@@ -1,6 +1,7 @@
-let urlApi = 'http://localhost:3000/api/products';
+let urlApi = '/api/products';
 
 fetch(urlApi)
+
   .then((res) => {
     if (res.ok) {
       return res.json();

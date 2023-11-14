@@ -5,7 +5,7 @@ const products = [
     "name": "Kanap Sinopé",
     "price": 1849,
     "imageUrl": "kanap01.jpeg",
-    "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Inspiré du design nordique, le Kanap Sinopé combine une esthétique épurée et un confort sans compromis. Parfait pour les petits espaces.",
     "altTxt": "Photo d'un canapé bleu, deux places"
   },
   {
@@ -14,7 +14,7 @@ const products = [
     "name": "Kanap Cyllène",
     "price": 4499,
     "imageUrl": "kanap02.jpeg",
-    "description": "Morbi nec erat aliquam, sagittis urna non, laoreet justo. Etiam sit amet interdum diam, at accumsan lectus.",
+    "description": "Avec son design audacieux, le Kanap Cyllène est le choix idéal pour apporter une touche de modernité à votre salon.",
     "altTxt": "Photo d'un canapé jaune et noir, quattre places"
   },
   {
@@ -23,7 +23,7 @@ const products = [
     "name": "Kanap Calycé",
     "price": 3199,
     "imageUrl": "kanap03.jpeg",
-    "description": "Pellentesque fermentum arcu venenatis ex sagittis accumsan. Vivamus lacinia fermentum tortor.Mauris imperdiet tellus ante.",
+    "description": "Le canapé d'angle Kanap Calycé est la pièce maîtresse idéale pour votre salon, alliant confort maximal et style contemporain.",
     "altTxt": "Photo d'un canapé d'angle, vert, trois places"
   },
   {
@@ -32,7 +32,7 @@ const products = [
     "name": "Kanap Autonoé",
     "price": 1499,
     "imageUrl": "kanap04.jpeg",
-    "description": "Donec mattis nisl tortor, nec blandit sapien fermentum at. Proin hendrerit efficitur fringilla. Lorem ipsum dolor sit amet.",
+    "description": "Petit mais confortable, le Kanap Autonoé en rose tendre est le choix parfait pour ajouter une touche de couleur et de confort à votre intérieur.",
     "altTxt": "Photo d'un canapé rose, une à deux place"
   },
   {
@@ -41,7 +41,7 @@ const products = [
     "name": "Kanap Eurydomé",
     "price": 2249,
     "imageUrl": "kanap05.jpeg",
-    "description": "Ut laoreet vulputate neque in commodo. Suspendisse maximus quis erat in sagittis. Donec hendrerit purus at congue aliquam.",
+    "description": "Le Kanap Eurydomé avec son design épuré et ses couleurs neutres offre un confort inégalé et s'adapte à tous les intérieurs.",
     "altTxt": "Photo d'un canapé gris, trois places"
   },
   {
@@ -50,7 +50,7 @@ const products = [
     "name": "Kanap Hélicé",
     "price": 999,
     "imageUrl": "kanap06.jpeg",
-    "description": "Curabitur vel augue sit amet arcu aliquet interdum. Integer vel quam mi. Morbi nec vehicula mi, sit amet vestibulum.",
+    "description": "Simple et élégant, le Kanap Hélicé est le choix parfait pour ceux qui apprécient le minimalisme sans sacrifier le confort.",
     "altTxt": "Photo d'un canapé gris, deux places"
   },
   {
@@ -59,7 +59,7 @@ const products = [
     "name": "Kanap Thyoné",
     "price": 1999,
     "imageUrl": "kanap07.jpeg",
-    "description": "EMauris imperdiet tellus ante, sit amet pretium turpis molestie eu. Vestibulum et egestas eros. Vestibulum non lacus orci.",
+    "description": "Le Kanap Thyoné, avec ses teintes chaudes et son design accueillant, crée une atmosphère chaleureuse dans votre espace de vie.",
     "altTxt": "Photo d'un canapé rouge, deux places"
   },
   {
@@ -68,7 +68,7 @@ const products = [
     "name": "Kanap orthosie",
     "price": 3999,
     "imageUrl": "kanap08.jpeg",
-    "description": "Mauris molestie laoreet finibus. Aenean scelerisque convallis lacus at dapibus. Morbi imperdiet enim metus rhoncus.",
+    "description": "Le Kanap Orthosie, alliant confort et esthétique avec ses couleurs pastel, est l'ajout parfait pour une touche de douceur.",
     "altTxt": "Photo d'un canapé rose, trois places"
   }
 ];
